@@ -1,3 +1,24 @@
+@media screen and (max-width: 680px) {
+.deck{
+    width:330px;
+    min-height: 340px;
+    padding: 17px;
+}
+.deck .card {
+    height: 63px;
+    width: 63px;
+}}
+@media screen and (min-width: 681px) {
+.deck{
+     width: 660px;
+    min-height: 680px;
+    padding: 32px;
+}
+.deck .card {
+    height: 125px;
+    width: 125px;
+}
+}
 html {
     box-sizing: border-box;
 }
@@ -38,8 +59,6 @@ h1 {
  */
 
 .deck {
-    width: 660px;
-    min-height: 680px;
     background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
     padding: 32px;
     border-radius: 10px;
@@ -49,13 +68,9 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 0 0 3em;
-	text-align:right;
-	list-style-type: none;
 }
 
 .deck .card {
-    height: 125px;
-    width: 125px;
     background: #2e3d49;
     font-size: 0;
     color: #ffffff;
@@ -101,7 +116,7 @@ h1 {
 
 .score-panel {
     text-align: left;
-    width: 345px;
+    width: 300px;
     margin-bottom: 10px;
 }
 
@@ -119,5 +134,45 @@ h1 {
 
 .score-panel .restart {
     float: right;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    list-style-type: none;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
     cursor: pointer;
 }
