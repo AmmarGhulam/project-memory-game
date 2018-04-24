@@ -15,7 +15,7 @@ var shuffledCards = shuffle(cards);
 function startTimer(){// start the timer for the game
     interval = setInterval(function(){
         timer.innerHTML = minute+"mins "+second+"secs";
-        if(matchedCard < 7)
+        if(matchedCard < 8)
         	second++;
         if(second == 60){
             minute++;
